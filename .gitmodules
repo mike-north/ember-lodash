@@ -1,4 +1,4 @@
 [submodule "addon"]
 	path = addon
-	url = git@github.com:truenorth/lodash.git
+	url = https://github.com/truenorth/ember-lodash.git
 	branch = es
