@@ -1,0 +1,1 @@
+export { default } from 'ember-lodash/util-tests/lodash-exports';
