@@ -1,5 +1,9 @@
 # ember-lodash
 
+[![Build Status](https://travis-ci.org/truenorth/ember-lodash.svg?branch=master)](https://travis-ci.org/truenorth/ember-lodash)
+[![Dependency Status](https://david-dm.org/truenorth/ember-lodash.svg)](https://david-dm.org/truenorth/ember-lodash)
+[![devDependency Status](https://david-dm.org/truenorth/ember-lodash/dev-status.svg)](https://david-dm.org/truenorth/ember-lodash#info=devDependencies)
+
 This ember addon allows consumption of the [lodash](https://lodash.com/) library (its [ES6 module variant](https://github.com/lodash/lodash/tree/es)) in [ember-cli](http://ember-cli.com) apps.
 
 ## Use
