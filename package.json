@@ -1,6 +1,6 @@
 {
   "name": "ember-lodash",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lodash in ES6 for Ember.js apps",
   "directories": {
     "doc": "doc",
@@ -15,8 +15,12 @@
     "type": "git",
     "url": "https://github.com/truenorth/ember-lodash.git"
   },
+  "homepage": "https://github.com/truenorth/ember-lodash",
   "engines": {
     "node": ">= 0.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/truenorth/ember-lodash/issues"
   },
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
