@@ -17,6 +17,7 @@ ember install ember-lodash
 # ember-cli <= 0.2.3
 ember install:addon ember-lodash
 ```
+
 And then in your ember.js app, you can import individual lodash modules freely
 
 ```js
