@@ -1,4 +1,0 @@
-[submodule "addon"]
-	path = addon
-	url = git://github.com/truenorth/lodash.git
-	branch = es
