@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/truenorth/ember-lodash.git"
+    "url": "https://github.com/mike-north/ember-lodash.git"
   },
-  "homepage": "https://github.com/truenorth/ember-lodash",
+  "homepage": "https://github.com/mike-north/ember-lodash",
   "engines": {
     "node": ">= 0.10.0"
   },
   "bugs": {
-    "url": "https://github.com/truenorth/ember-lodash/issues"
+    "url": "https://github.com/mike-north/ember-lodash/issues"
   },
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
