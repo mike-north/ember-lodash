@@ -8,7 +8,7 @@ module.exports = {
   name: 'lodash',
 
   treeForAddon: function(tree) {
-    var lodashPath = path.join(this.project.addonPackages['ember-lodash'].path, 'node_modules', 'lodash-es');
+    var lodashPath = require.resolve('lodash-es/lodash').replace(/\/lodash\.js$/, '');
     var lodashTree = this.treeGenerator(lodashPath);
 
     var trees = mergeTrees([lodashTree, tree], {
