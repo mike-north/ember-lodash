@@ -11,7 +11,7 @@ This ember addon allows consumption of the [lodash](https://lodash.com/) library
 
 ## Use
 
-First you install this addon 
+First you install this addon
 
 ```sh
 # ember-cli > 0.2.3
@@ -49,6 +49,7 @@ let truncatedString = _.trunc(rawString);
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
