@@ -1,6 +1,5 @@
-import _ from 'lodash/lodash';
-import _date from 'lodash/date';
-import _string from 'lodash/string';
+import _ from 'lodash';
+import _now from 'lodash/now';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | lodash exports');
@@ -12,10 +11,5 @@ test('lodash as a single module has been exported', function(assert) {
 
 
 test('lodash individual modules have been exported', function(assert) {
-  assert.ok(_date, 'lodash date is exported alone');
-  assert.equal(typeof _date.now, 'function', 'lodash date#now() exists');
-
-  assert.ok(_string, 'lodash string is exported alone');
-  assert.equal(typeof _string.trim, 'function', 'lodash string#trim() exists');
-  assert.equal(typeof _string.trunc, 'function', 'lodash string#trunc() exists');
+  assert.equal(typeof _now.now, 'function', 'lodash date#now() exists');
 });
