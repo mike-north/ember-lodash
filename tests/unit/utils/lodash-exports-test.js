@@ -10,7 +10,6 @@ test('lodash as a single module has been exported', function(assert) {
   assert.equal(typeof _.sortBy, 'function', 'lodash has a known function on it (sortBy)');
 });
 
-
 test('lodash individual modules have been exported', function(assert) {
   assert.ok(_date, 'lodash date is exported alone');
   assert.equal(typeof _date.now, 'function', 'lodash date#now() exists');

@@ -1,12 +1,28 @@
+function makeScenario(emberVersion) {
+  return {
+    name: 'ember-' + emberVersion,
+    bower: {
+      dependencies: {
+        'ember': '~' + emberVersion + '.0'
+      },
+      resolutions: {
+        'ember': '~' + emberVersion + '.0'
+      }
+    }
+  }
+}
+
 /*jshint node:true*/
 module.exports = {
   scenarios: [
-    {
-      name: 'default',
-      bower: {
-        dependencies: { }
-      }
-    },
+    makeScenario('1.10'),
+    makeScenario('1.11'),
+    makeScenario('1.12'),
+    makeScenario('1.13'),
+    makeScenario('2.0'),
+    makeScenario('2.1'),
+    makeScenario('2.2'),
+    makeScenario('2.3'),
     {
       name: 'ember-release',
       bower: {
