@@ -16,5 +16,5 @@ test('lodash individual modules have been exported', function(assert) {
 
   assert.ok(_string, 'lodash string is exported alone');
   assert.equal(typeof _string.trim, 'function', 'lodash string#trim() exists');
-  assert.equal(typeof _string.trunc, 'function', 'lodash string#trunc() exists');
+  assert.equal(typeof _string.truncate, 'function', 'lodash string#truncate() exists');
 });
