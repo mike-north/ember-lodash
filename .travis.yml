@@ -1,37 +1,41 @@
+---
 language: node_js
 node_js:
-  - '0.12'
+  - "4"
+
 sudo: false
+
 cache:
   directories:
-  - node_modules
+    - node_modules
+
 env:
-  - EMBER_TRY_SCENARIO=ember-1.10
-  - EMBER_TRY_SCENARIO=ember-1.11
-  - EMBER_TRY_SCENARIO=ember-1.12
   - EMBER_TRY_SCENARIO=ember-1.13
-  - EMBER_TRY_SCENARIO=ember-2.0
-  - EMBER_TRY_SCENARIO=ember-2.1
-  - EMBER_TRY_SCENARIO=ember-2.2
-  - EMBER_TRY_SCENARIO=ember-2.3
+  - EMBER_TRY_SCENARIO=ember-2.4
   - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-beta
+  - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
   - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
 
 matrix:
   fast_finish: true
   allow_failures:
     - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
+    - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
+
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
   - npm config set spin false
-  - npm install -g npm@^2
-install:
   - npm install -g bower
+  - bower --version
+  - npm install phantomjs-prebuilt
+  - phantomjs --version
+
+install:
   - npm install
   - bower install
+
 script:
-  - ember try $EMBER_TRY_SCENARIO test
+  - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
 notifications:
   slack:
     secure: w9GVv8M4v08G6TBnDEinvchFherJDTOWJl2BeZTKLYeWMjXAa5dfLVnUPg6SVTIyaVDocnZ1rmYh96S6xVnsG4uz+LYf2W5G7uy/5j8pthNhTBnXQa0dmUm/dRuYUtDGa8AtYPgeqI87Q+xJ0YQCGxbMC7dBhSU/1HfOd6bl+7I5H1kfbt/tp8tfI3hDJmET1fuWLtAtK6g26txsKx35eNMI9CHdnGxMdjdTFeewKlpwjj1x9dYH03wtNJlvA3bBm7xwYh11Apob0sVXvc4cFwJm+0UyhBIzm0KtU8/z6bkRWSmM2PEwnjChyMMxMy02nfFOeHRBZqXL063La9K6ZOiv+SPcl9KsPKA/vSkx0AUMP8J+EJ8GBMOJfE2fWi7tJFzWo8+P0AmrVhsHEYrLzgGnQST2VCKv7wbmmBtvusDY79LQRpjzYlmSeaj5vhozLcKtKhNIHdpJFdU+hY4sy4pgfTmep560wjQ7t5CMHJa+siLWcKm/fWjr2zxg+k7ciwgOu/6NzYALCkG3A3lcvrmNcdSjyK4Jm8f4DQhj+Ggaj9aQf3p0h0S675Tx9tOWUQsmBt9jcYWRMrTeMZxYS81978NuI7zQJxptJmlbCI7XssXRZmWKx8AkFW/OuaSklFObJl4Ja7T6PMdrXYUb0I9aYMEPN3psHYcOnono570=
