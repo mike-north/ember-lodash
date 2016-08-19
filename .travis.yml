@@ -1,52 +1,41 @@
+---
 language: node_js
-
 node_js:
-  - '0.12'
+  - "4"
 
 sudo: false
 
 cache:
   directories:
-  - node_modules
+    - node_modules
 
 env:
   - EMBER_TRY_SCENARIO=ember-1.10
-  - EMBER_TRY_SCENARIO=ember-1.11
-  - EMBER_TRY_SCENARIO=ember-1.12
   - EMBER_TRY_SCENARIO=ember-1.13
-  - EMBER_TRY_SCENARIO=ember-2.0
-  - EMBER_TRY_SCENARIO=ember-2.1
-  - EMBER_TRY_SCENARIO=ember-2.2
-  - EMBER_TRY_SCENARIO=ember-2.3
   - EMBER_TRY_SCENARIO=ember-2.4
-  - EMBER_TRY_SCENARIO=ember-2.5
   - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-beta
+  - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
   - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
-
-branches:
-  only:
-    - master
-    - v3
-    - v4
 
 matrix:
   fast_finish: true
   allow_failures:
     - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
+    - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
 
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
   - npm config set spin false
-  - npm install -g npm@^2
+  - npm install -g bower
+  - bower --version
+  - npm install phantomjs-prebuilt
+  - phantomjs --version
 
 install:
-  - npm install -g bower
   - npm install
   - bower install
 
 script:
-  - ember try $EMBER_TRY_SCENARIO test
+  - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
 
 notifications:
   slack:
