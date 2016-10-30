@@ -51,7 +51,7 @@
   "dependencies": {
     "broccoli-merge-trees": "^1.1.1",
     "ember-cli-babel": "^5.1.6",
-    "lodash-es": "^3.10.0"
+    "lodash-es": "^4.16.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
