@@ -1,6 +1,6 @@
 {
   "name": "ember-lodash",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Lodash in ES6 for Ember.js apps",
   "directories": {
     "doc": "doc",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/levanto-financial/ember-lodash.git"
+    "url": "https://github.com/mike-north/ember-lodash.git"
   },
-  "homepage": "https://github.com/levanto-financial/ember-lodash",
+  "homepage": "https://github.com/mike-north/ember-lodash",
   "engines": {
     "node": ">= 0.10.0"
   },
   "bugs": {
-    "url": "https://github.com/levanto-financial/ember-lodash/issues"
+    "url": "https://github.com/mike-north/ember-lodash/issues"
   },
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "ember-cli-htmlbars": "^1.0.8",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-jshint": "^1.0.0",
+    "ember-cli-jshint": "^2.0.1",
     "ember-cli-qunit": "^3.0.0",
     "ember-cli-release": "1.0.0-beta.2",
     "ember-cli-test-loader": "^1.1.0",
