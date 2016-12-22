@@ -1,6 +1,6 @@
 {
   "name": "ember-lodash",
-  "version": "3.10.0",
+  "version": "4.17.0",
   "description": "Lodash in ES6 for Ember.js apps",
   "directories": {
     "doc": "doc",
