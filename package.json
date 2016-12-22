@@ -1,6 +1,6 @@
 {
   "name": "ember-lodash",
-  "version": "0.0.11",
+  "version": "3.10.0",
   "description": "Lodash in ES6 for Ember.js apps",
   "directories": {
     "doc": "doc",
@@ -51,7 +51,7 @@
   "dependencies": {
     "broccoli-merge-trees": "^1.1.1",
     "ember-cli-babel": "^5.1.6",
-    "lodash-es": "^3.10.0"
+    "lodash-es": "3.10.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
