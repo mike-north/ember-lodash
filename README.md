@@ -31,9 +31,17 @@ let truncatedString = _string.trunc(rawString);
 Additionally, if you wish to work with the entire lodash library on a single namespace, you have the option of importing that as well
 
 ```js
-import _ from 'lodash/lodash';
+import _ from 'lodash';
 
 let truncatedString = _.trunc(rawString);
+```
+
+It is also possible to import individual modules
+
+```js
+import { trunc } from 'lodash';
+
+let truncatedString = trunc(rawString);
 ```
 
 ## Installation
