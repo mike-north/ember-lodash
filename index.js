@@ -9,6 +9,10 @@ var Funnel = require('broccoli-funnel');
 module.exports = {
   name: 'lodash',
 
+  _shouldCompileJS: function() {
+    return true;
+  },
+
   treeForAddon: function(tree) {
     var lodashPath = path.dirname(require.resolve('lodash-es'));
 
