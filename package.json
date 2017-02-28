@@ -34,8 +34,8 @@
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-jshint": "^2.0.1",
     "ember-cli-qunit": "^3.0.1",
-    "ember-cli-release": "1.0.0-beta.2",
     "ember-cli-shims": "^1.0.2",
+    "ember-cli-release": "0.2.9",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
@@ -55,7 +55,7 @@
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-string-replace": "^0.1.1",
     "ember-cli-babel": "^5.1.7",
-    "lodash-es": "^4.17.2"
+    "lodash-es": "^4.17.4"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
