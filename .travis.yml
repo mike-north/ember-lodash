@@ -1,7 +1,7 @@
 ---
 language: node_js
 node_js:
-  - "4"
+  - "6"
 
 sudo: false
 
@@ -25,9 +25,8 @@ matrix:
 
 before_install:
   - npm config set spin false
-  - npm install -g bower
+  - npm install -g bower phantomjs-prebuilt
   - bower --version
-  - npm install phantomjs-prebuilt
   - phantomjs --version
 
 install:
@@ -35,7 +34,9 @@ install:
   - bower install
 
 script:
-  - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+  # Usually, it's ok to finish the test scenario without reverting
+  #  to the addon's original dependency state, skipping "cleanup".
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
 
 notifications:
   slack:
