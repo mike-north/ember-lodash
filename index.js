@@ -50,6 +50,6 @@ module.exports = {
       tree = lodashTree;
     }
 
-    return this._super(tree);
+    return this._super.treeForAddon.call(this, tree);
   }
 };
