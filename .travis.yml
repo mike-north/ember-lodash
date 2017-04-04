@@ -3,11 +3,14 @@ language: node_js
 node_js:
   - "6"
 
+dist: trusty
 sudo: false
 
 cache:
+  yarn: true
   directories:
-    - node_modules
+    - $HOME/.npm
+    - $HOME/.cache # includes bowers cache
 
 env:
   - EMBER_TRY_SCENARIO=ember-1.10
@@ -25,12 +28,13 @@ matrix:
 
 before_install:
   - npm config set spin false
-  - npm install -g bower phantomjs-prebuilt
+  - npm install -g yarn
+  - yarn global add bower phantomjs-prebuilt
   - bower --version
   - phantomjs --version
 
 install:
-  - npm install
+  - yarn install
   - bower install
 
 script:

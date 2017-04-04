@@ -44,6 +44,7 @@
     "ember-source": "~2.12.0",
     "ember-suave": "4.0.1",
     "ember-sublime": "0.0.9",
+    "ember-try": "^0.2.13",
     "loader.js": "^4.2.3"
   },
   "keywords": [
