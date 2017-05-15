@@ -59,7 +59,7 @@ module.exports = {
     lodashTree = replace(lodashTree, {
       files: [ '_defineProperty.js' ],
       pattern: {
-        match: /catch(e) { }/g,
+        match: /catch ?\(e\) ?{ ?}/g,
         replacement: 'catch(e) { return null; }'
       }
     });
