@@ -1,3 +1,6 @@
+/* eslint-env node */
+'use strict';
+
 function makeScenario(emberVersion) {
   return {
     name: 'ember-' + emberVersion,
@@ -8,11 +11,15 @@ function makeScenario(emberVersion) {
       resolutions: {
         'ember': '~' + emberVersion + '.0'
       }
+    },
+    npm: {
+      devDependencies: {
+        'ember-source': null
+      }
     }
   }
 }
 
-/*jshint node:true*/
 module.exports = {
   scenarios: [
     makeScenario('1.10'),
@@ -30,6 +37,8 @@ module.exports = {
     makeScenario('2.8'),
     makeScenario('2.9'),
     makeScenario('2.10'),
+    makeScenario('2.11'),
+    makeScenario('2.12'),
     {
       name: 'ember-release',
       bower: {
