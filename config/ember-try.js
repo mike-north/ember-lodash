@@ -1,13 +1,20 @@
 /* eslint-env node */
-function makeScenario(emberVersion) {
+function makeScenario(emberVersion, isLts = false, releaseVersion = null) {
+  let name = `ember-${isLts ? 'lts-' : ''}${emberVersion}`;
+  let version = releaseVersion || `~${emberVersion}.0`;
   return {
-    name: "ember-" + emberVersion,
+    name,
     bower: {
       dependencies: {
-        ember: "~" + emberVersion + ".0"
+        ember: version
       },
       resolutions: {
-        ember: "~" + emberVersion + ".0"
+        ember: version
+      }
+    },
+    npm: {
+      devDependencies: {
+        'ember-source': null
       }
     }
   };
@@ -15,75 +22,75 @@ function makeScenario(emberVersion) {
 
 module.exports = {
   scenarios: [
-    makeScenario("1.10"),
-    makeScenario("1.11"),
-    makeScenario("1.12"),
-    makeScenario("1.13"),
-    makeScenario("2.0"),
-    makeScenario("2.4"),
-    makeScenario("2.8"),
-    makeScenario("2.10"),
+    makeScenario('1.10'),
+    makeScenario('1.11'),
+    makeScenario('1.12'),
+    makeScenario('1.13'),
+    makeScenario('2.0'),
+    makeScenario('2.4', true, 'components/ember#lts-2-8'),
+    makeScenario('2.8', true, 'components/ember#lts-2-8'),
+    makeScenario('2.10'),
     {
-      name: "ember-release",
+      name: 'ember-release',
       bower: {
         dependencies: {
-          ember: "components/ember#release"
+          ember: 'components/ember#release'
         },
         resolutions: {
-          ember: "release"
+          ember: 'release'
         }
       },
       npm: {
         devDependencies: {
-          "ember-source": null
+          'ember-source': null
         }
       }
     },
     {
-      name: "ember-release",
+      name: 'ember-release',
       bower: {
         dependencies: {
-          ember: "components/ember#release"
+          ember: 'components/ember#release'
         },
         resolutions: {
-          ember: "release"
+          ember: 'release'
         }
       },
       npm: {
         devDependencies: {
-          "ember-source": null
+          'ember-source': null
         }
       }
     },
     {
-      name: "ember-beta",
+      name: 'ember-beta',
       bower: {
         dependencies: {
-          ember: "components/ember#beta"
+          ember: 'components/ember#beta'
         },
         resolutions: {
-          ember: "beta"
+          ember: 'beta'
         }
       },
       npm: {
         devDependencies: {
-          "ember-source": null
+          'ember-source': null
         }
       }
     },
     {
-      name: "ember-canary",
+      name: 'ember-canary',
       bower: {
         dependencies: {
-          ember: "components/ember#canary"
+          ember: 'components/ember#canary'
         },
         resolutions: {
-          ember: "canary"
+          ember: 'canary'
         }
       },
       npm: {
         devDependencies: {
-          "ember-source": null
+          'ember-source': null
         }
       }
     }

@@ -17,3 +17,4 @@ npm-debug.log*
 testem.log
 *.sublime-workspace
 yarn-error.log*
+.node_modules*
