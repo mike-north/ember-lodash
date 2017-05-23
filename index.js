@@ -1,11 +1,11 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
-var path = require('path');
-var replace = require('broccoli-string-replace');
-var mergeTrees = require('broccoli-merge-trees');
-var Funnel = require('broccoli-funnel');
-var BroccoliDebug = require('broccoli-debug');
+let path = require('path');
+let replace = require('broccoli-string-replace');
+let mergeTrees = require('broccoli-merge-trees');
+let Funnel = require('broccoli-funnel');
+let BroccoliDebug = require('broccoli-debug');
 
 module.exports = {
   name: 'lodash',
@@ -16,18 +16,17 @@ module.exports = {
     this._debugTree = BroccoliDebug.buildDebugCallback('ember-lodash');
   },
 
-
-  _shouldCompileJS: function() {
+  _shouldCompileJS() {
     return true;
   },
 
-  treeForAddon: function(tree) {
-    var lodashPath = path.dirname(require.resolve('lodash-es'));
+  treeForAddon(tree) {
+    let lodashPath = path.dirname(require.resolve('lodash-es'));
 
     let lodashTree = this._debugTree(lodashPath, 'input');
 
     lodashTree = replace(lodashTree, {
-      files: [ '*.js' ],
+      files: ['*.js'],
       pattern: {
         match: /\.js/g,
         replacement: ''
@@ -37,7 +36,7 @@ module.exports = {
     lodashTree = this._debugTree(lodashTree, 'post-extension-replace');
 
     lodashTree = new Funnel(lodashTree, {
-      getDestinationPath: function(path) {
+      getDestinationPath(path) {
         if (path === 'lodash.js') {
           return 'index.js';
         }
@@ -49,7 +48,7 @@ module.exports = {
     lodashTree = this._debugTree(lodashTree, 'post-index-move');
 
     lodashTree = replace(lodashTree, {
-      files: [ '_getNative.js' ],
+      files: ['_getNative.js'],
       pattern: {
         match: /undefined/g,
         replacement: 'null'
@@ -57,7 +56,7 @@ module.exports = {
     });
 
     lodashTree = replace(lodashTree, {
-      files: [ '_defineProperty.js' ],
+      files: ['_defineProperty.js'],
       pattern: {
         match: /catch ?\(e\) ?{ ?}/g,
         replacement: 'catch(e) { return null; }'

@@ -1,5 +1,7 @@
 # ember-lodash
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-lodash.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/mike-north/ember-lodash.svg?branch=master)](https://travis-ci.org/mike-north/ember-lodash)
 [![Dependency Status](https://david-dm.org/mike-north/ember-lodash.svg)](https://david-dm.org/mike-north/ember-lodash)
 [![devDependency Status](https://david-dm.org/mike-north/ember-lodash/dev-status.svg)](https://david-dm.org/mike-north/ember-lodash#info=devDependencies)
