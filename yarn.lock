@@ -1751,9 +1751,9 @@ core-object@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/core-object/-/core-object-1.1.0.tgz#86d63918733cf9da1a5aae729e62c0a88e66ad0a"
 
-core-object@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/core-object/-/core-object-3.1.0.tgz#f5219fec2a19c40956f1c723d121890c88c5f677"
+core-object@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/core-object/-/core-object-3.1.3.tgz#df399b3311bdb0c909e8aae8929fc3c1c4b25880"
   dependencies:
     chalk "^1.1.3"
 
@@ -1788,6 +1788,10 @@ d@1:
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
   dependencies:
     es5-ext "^0.10.9"
+
+dag-map@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/dag-map/-/dag-map-2.0.2.tgz#9714b472de82a1843de2fba9b6876938cab44c68"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -2181,9 +2185,9 @@ ember-cli-version-checker@^1.2.0:
   dependencies:
     semver "^5.3.0"
 
-ember-cli@2.13.2:
-  version "2.13.2"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-2.13.2.tgz#a561f08e69b184fa3175f706cced299c0d1684e5"
+ember-cli@2.13.3:
+  version "2.13.3"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-2.13.3.tgz#1918500e6280a68be017aca9b69937f6782a24b8"
   dependencies:
     amd-name-resolver "0.0.6"
     babel-plugin-transform-es2015-modules-amd "^6.24.0"
@@ -2208,7 +2212,8 @@ ember-cli@2.13.2:
     compression "^1.4.4"
     configstore "^3.0.0"
     console-ui "^1.0.2"
-    core-object "^3.0.0"
+    core-object "^3.1.3"
+    dag-map "^2.0.2"
     diff "^3.2.0"
     ember-cli-broccoli-sane-watcher "^2.0.4"
     ember-cli-get-component-path-option "^1.0.0"
@@ -2218,7 +2223,7 @@ ember-cli@2.13.2:
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-preprocess-registry "^3.1.0"
     ember-cli-string-utils "^1.0.0"
-    ember-try "^0.2.14"
+    ember-try "^0.2.15"
     ensure-posix-path "^1.0.2"
     escape-string-regexp "^1.0.3"
     execa "^0.6.0"
@@ -2351,9 +2356,9 @@ ember-try-config@^2.0.1:
     rsvp "^3.2.1"
     semver "^5.1.0"
 
-ember-try@^0.2.14:
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/ember-try/-/ember-try-0.2.14.tgz#d47e8fa38858d5683e47856e24a260b39e9caf4a"
+ember-try@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/ember-try/-/ember-try-0.2.15.tgz#559c756058717595babe70068e541625bd5e210a"
   dependencies:
     chalk "^1.0.0"
     cli-table2 "^0.2.0"
@@ -2368,7 +2373,6 @@ ember-try@^0.2.14:
     rimraf "^2.3.2"
     rsvp "^3.0.17"
     semver "^5.1.0"
-    sync-exec "^0.6.2"
 
 encodeurl@~1.0.1:
   version "1.0.1"
@@ -4317,11 +4321,11 @@ mustache@^2.2.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/mustache/-/mustache-2.3.0.tgz#4028f7778b17708a489930a6e52ac3bca0da41d0"
 
-mute-stream@0.0.5:
+mute-stream@0.0.5, mute-stream@~0.0.4:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
 
-mute-stream@0.0.6, mute-stream@~0.0.4:
+mute-stream@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.6.tgz#48962b19e169fd1dfc240b3f1e7317627bbc47db"
 
@@ -4947,7 +4951,7 @@ read@1, read@1.0.x, read@~1.0.1, read@~1.0.7:
   dependencies:
     mute-stream "~0.0.4"
 
-"readable-stream@1 || 2", readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@~2.0.5:
+"readable-stream@1 || 2", readable-stream@^2.0.2, readable-stream@~2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
@@ -4958,7 +4962,7 @@ read@1, read@1.0.x, read@~1.0.1, read@~1.0.7:
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
-readable-stream@^2.2.2:
+readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.3.tgz#9cf49463985df016c8ae8813097a9293a9b33729"
   dependencies:
@@ -5217,11 +5221,11 @@ rimraf@~2.5.0:
   dependencies:
     glob "^7.0.5"
 
-rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.4.0:
+rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.3.3, rsvp@^3.4.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.5.0.tgz#a62c573a4ae4e1dfd0697ebc6242e79c681eaa34"
 
-rsvp@^3.0.17, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.1, rsvp@^3.3.3:
+rsvp@^3.0.17, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.1:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.3.3.tgz#34633caaf8bc66ceff4be3c2e1dffd032538a813"
 
@@ -5635,10 +5639,6 @@ supports-color@^2.0.0:
 symlink-or-copy@^1.0.0, symlink-or-copy@^1.0.1, symlink-or-copy@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/symlink-or-copy/-/symlink-or-copy-1.1.8.tgz#cabe61e0010c1c023c173b25ee5108b37f4b4aa3"
-
-sync-exec@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/sync-exec/-/sync-exec-0.6.2.tgz#717d22cc53f0ce1def5594362f3a89a2ebb91105"
 
 table@^3.7.8:
   version "3.8.3"
