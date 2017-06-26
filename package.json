@@ -55,7 +55,7 @@
     "broccoli-funnel": "^1.1.0",
     "broccoli-merge-trees": "^2.0.0",
     "broccoli-string-replace": "^0.1.1",
-    "ember-cli-babel": "6.1.0",
+    "ember-cli-babel": "^6.4.1",
     "lodash-es": "^4.17.4"
   },
   "ember-addon": {
