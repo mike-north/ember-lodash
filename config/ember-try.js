@@ -6,10 +6,10 @@ function makeScenario(emberVersion, isLts = false, releaseVersion = null) {
     name,
     bower: {
       dependencies: {
-        ember: version
+        'ember': version
       },
       resolutions: {
-        ember: version
+        'ember': version
       }
     },
     npm: {
@@ -21,6 +21,7 @@ function makeScenario(emberVersion, isLts = false, releaseVersion = null) {
 }
 
 module.exports = {
+  useYarn: true,
   scenarios: [
     makeScenario('1.10'),
     makeScenario('1.11'),
@@ -29,15 +30,22 @@ module.exports = {
     makeScenario('2.0'),
     makeScenario('2.4', true, 'components/ember#lts-2-8'),
     makeScenario('2.8', true, 'components/ember#lts-2-8'),
-    makeScenario('2.10'),
+    {
+      name: 'ember-lts-2.12',
+      npm: {
+        devDependencies: {
+          'ember-source': '~2.12.0'
+        }
+      }
+    },
     {
       name: 'ember-release',
       bower: {
         dependencies: {
-          ember: 'components/ember#release'
+          'ember': 'components/ember#release'
         },
         resolutions: {
-          ember: 'release'
+          'ember': 'release'
         }
       },
       npm: {
@@ -50,10 +58,10 @@ module.exports = {
       name: 'ember-release',
       bower: {
         dependencies: {
-          ember: 'components/ember#release'
+          'ember': 'components/ember#release'
         },
         resolutions: {
-          ember: 'release'
+          'ember': 'release'
         }
       },
       npm: {
@@ -66,10 +74,10 @@ module.exports = {
       name: 'ember-beta',
       bower: {
         dependencies: {
-          ember: 'components/ember#beta'
+          'ember': 'components/ember#beta'
         },
         resolutions: {
-          ember: 'beta'
+          'ember': 'beta'
         }
       },
       npm: {
@@ -82,16 +90,22 @@ module.exports = {
       name: 'ember-canary',
       bower: {
         dependencies: {
-          ember: 'components/ember#canary'
+          'ember': 'components/ember#canary'
         },
         resolutions: {
-          ember: 'canary'
+          'ember': 'canary'
         }
       },
       npm: {
         devDependencies: {
           'ember-source': null
         }
+      }
+    },
+    {
+      name: 'ember-default',
+      npm: {
+        devDependencies: {}
       }
     }
   ]
