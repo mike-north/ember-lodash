@@ -1,6 +1,6 @@
 {
   "name": "ember-lodash",
-  "version": "4.17.5",
+  "version": "4.17.6",
   "description": "Lodash in ES6 for Ember.js apps",
   "keywords": [
     "ember-addon"
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mike-north/ember-lodash",
   "engines": {
-    "node": ">= 4"
+    "node": "^4.5 || 6.* || >= 7.*"
   },
   "bugs": {
     "url": "https://github.com/mike-north/ember-lodash/issues"
@@ -57,9 +57,6 @@
     "eslint-plugin-ember-suave": "^1.0.0",
     "greenkeeper-lockfile": "^1.2.1",
     "loader.js": "^4.2.3"
-  },
-  "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
