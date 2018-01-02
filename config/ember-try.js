@@ -1,7 +1,7 @@
 /* eslint-env node */
-function makeScenario(emberVersion, isLts = false, releaseVersion = null) {
-  let name = `ember-${isLts ? 'lts-' : ''}${emberVersion}`;
-  let version = releaseVersion || `~${emberVersion}.0`;
+function makeScenario(emberVersion, isLts, releaseVersion) {
+  var name = `ember-${isLts ? 'lts-' : ''}${emberVersion}`;
+  var version = releaseVersion || `~${emberVersion}.0`;
   return {
     name,
     bower: {
