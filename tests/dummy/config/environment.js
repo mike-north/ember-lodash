@@ -33,7 +33,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-    ENV.EmberENV.RAISE_ON_DEPRECATION = !process.env['ALLOW_DEPRECATIONS'];
+    ENV.EmberENV.RAISE_ON_DEPRECATION = !process.env.ALLOW_DEPRECATIONS;
     // Testem prefers this...
     ENV.locationType = 'none';
 
@@ -42,6 +42,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.APP.autoboot = false;
   }
 
   if (environment === 'production') {
