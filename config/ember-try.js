@@ -1,15 +1,15 @@
 /* eslint-env node */
-function makeScenario(emberVersion, isLts = false, releaseVersion = null) {
-  let name = `ember-${isLts ? 'lts-' : ''}${emberVersion}`;
-  let version = releaseVersion || `~${emberVersion}.0`;
+function makeScenario(emberVersion, isLts, releaseVersion) {
+  var name = `ember-${isLts ? 'lts-' : ''}${emberVersion}`;
+  var version = releaseVersion || `~${emberVersion}.0`;
   return {
     name,
     bower: {
       dependencies: {
-        'ember': version
+        ember: version
       },
       resolutions: {
-        'ember': version
+        ember: version
       }
     },
     npm: {
@@ -39,18 +39,10 @@ module.exports = {
       }
     },
     {
-      name: 'ember-release',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#release'
-        },
-        resolutions: {
-          'ember': 'release'
-        }
-      },
+      name: 'ember-lts-2.16',
       npm: {
         devDependencies: {
-          'ember-source': null
+          'ember-source': '~2.16.0'
         }
       }
     },
@@ -58,10 +50,10 @@ module.exports = {
       name: 'ember-release',
       bower: {
         dependencies: {
-          'ember': 'components/ember#release'
+          ember: 'components/ember#release'
         },
         resolutions: {
-          'ember': 'release'
+          ember: 'release'
         }
       },
       npm: {
@@ -74,10 +66,10 @@ module.exports = {
       name: 'ember-beta',
       bower: {
         dependencies: {
-          'ember': 'components/ember#beta'
+          ember: 'components/ember#beta'
         },
         resolutions: {
-          'ember': 'beta'
+          ember: 'beta'
         }
       },
       npm: {
@@ -90,10 +82,10 @@ module.exports = {
       name: 'ember-canary',
       bower: {
         dependencies: {
-          'ember': 'components/ember#canary'
+          ember: 'components/ember#canary'
         },
         resolutions: {
-          'ember': 'canary'
+          ember: 'canary'
         }
       },
       npm: {
