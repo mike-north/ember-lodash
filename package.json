@@ -31,7 +31,7 @@
   "dependencies": {
     "broccoli-debug": "^0.6.1",
     "broccoli-funnel": "^2.0.1",
-    "broccoli-merge-trees": "^2.0.0",
+    "broccoli-merge-trees": "^3.0.0",
     "broccoli-string-replace": "^0.1.1",
     "ember-cli-babel": "^6.10.0",
     "lodash-es": "^4.17.4"
