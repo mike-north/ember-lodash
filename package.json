@@ -34,7 +34,7 @@
     "broccoli-merge-trees": "^2.0.0",
     "broccoli-string-replace": "^0.1.1",
     "ember-cli-babel": "^6.10.0",
-    "lodash-es": "^4.17.4"
+    "lodash-es": "^4.17.8"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.6",
