@@ -37,7 +37,7 @@
     "lodash-es": "^4.17.4"
   },
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.6",
+    "broccoli-asset-rev": "^2.7.0",
     "ember-cli": "~2.18.0",
     "ember-cli-changelog": "0.3.4",
     "ember-cli-dependency-checker": "^2.0.0",
