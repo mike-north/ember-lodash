@@ -32,7 +32,7 @@ jobs:
       install:
         - yarn install --non-interactive
       script:
-        - yarn lint:ts
+        - yarn lint:js
         - ember test
 
     - name: 'Floating Dependencies'
