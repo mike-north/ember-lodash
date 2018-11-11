@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
+    "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember try:each",
     "semantic-release": "semantic-release",
@@ -60,6 +60,7 @@
     "ember-load-initializers": "^2.0.0",
     "ember-resolver": "^5.0.1",
     "ember-source": "^3.5.1",
+    "ember-source-channel-url": "^1.1.0",
     "ember-try": "^1.1.0",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-ember-suave": "^1.0.0",
