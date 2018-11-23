@@ -66,7 +66,7 @@
     "eslint-plugin-ember": "6.0.1",
     "eslint-plugin-node": "8.0.0",
     "loader.js": "4.7.0",
-    "qunit-dom": "0.8.0"
+    "qunit-dom": "0.8.1"
   },
   "optionalDependencies": {
     "@mike-north/js-lib-renovate-config": "1.0.0",
