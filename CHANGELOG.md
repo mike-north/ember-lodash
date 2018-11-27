@@ -1,3 +1,10 @@
+## [4.19.2](https://github.com/mike-north/ember-lodash/compare/v4.19.1...v4.19.2) (2018-11-27)
+
+
+### Bug Fixes
+
+* optionalDependencies -> devDependencies ([551ee7a](https://github.com/mike-north/ember-lodash/commit/551ee7a))
+
 ## [4.19.1](https://github.com/mike-north/ember-lodash/compare/v4.19.0...v4.19.1) (2018-11-12)
 
 
