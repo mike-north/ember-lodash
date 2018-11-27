@@ -1,10 +1,6 @@
 # ember-lodash
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-lodash.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/mike-north/ember-lodash.svg?branch=master)](https://travis-ci.org/mike-north/ember-lodash)
-[![Dependency Status](https://david-dm.org/mike-north/ember-lodash.svg)](https://david-dm.org/mike-north/ember-lodash)
-[![devDependency Status](https://david-dm.org/mike-north/ember-lodash/dev-status.svg)](https://david-dm.org/mike-north/ember-lodash#info=devDependencies)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-lodash.svg)](http://emberobserver.com/addons/ember-lodash)
 [![npm version](https://badge.fury.io/js/ember-lodash.svg)](http://badge.fury.io/js/ember-lodash)
 [![Code Climate](https://codeclimate.com/github/mike-north/ember-lodash/badges/gpa.svg)](https://codeclimate.com/github/mike-north/ember-lodash)
