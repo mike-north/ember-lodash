@@ -8,7 +8,10 @@ let Funnel = require('broccoli-funnel');
 let BroccoliDebug = require('broccoli-debug');
 
 module.exports = {
-  name: 'lodash',
+  name: 'ember-lodash',
+  moduleName() {
+    return 'lodash';
+  },
 
   init() {
     this._super.init && this._super.init.apply(this, arguments);
