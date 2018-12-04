@@ -20,8 +20,7 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember try:each",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "semantic-release": "semantic-release"
   },
   "homepage": "https://github.com/mike-north/ember-lodash",
   "engines": {
@@ -69,7 +68,6 @@
     "eslint-plugin-node": "8.0.0",
     "loader.js": "4.7.0",
     "semantic-release": "15.12.3",
-    "travis-deploy-once": "5.0.9",
     "qunit-dom": "0.8.2"
   },
   "ember-addon": {
