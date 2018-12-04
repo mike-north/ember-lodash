@@ -1,3 +1,10 @@
+## [4.19.3](https://github.com/mike-north/ember-lodash/compare/v4.19.2...v4.19.3) (2018-12-04)
+
+
+### Bug Fixes
+
+* Use public API to diverge add-on name from the es6 module name the ember app sees. ([fdc78d8](https://github.com/mike-north/ember-lodash/commit/fdc78d8))
+
 ## [4.19.2](https://github.com/mike-north/ember-lodash/compare/v4.19.1...v4.19.2) (2018-11-27)
 
 
