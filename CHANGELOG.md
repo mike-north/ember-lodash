@@ -1,3 +1,10 @@
+## [4.19.4](https://github.com/mike-north/ember-lodash/compare/v4.19.3...v4.19.4) (2018-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update broccoli-merge-trees to v3 ([7c34519](https://github.com/mike-north/ember-lodash/commit/7c34519))
+
 ## [4.19.3](https://github.com/mike-north/ember-lodash/compare/v4.19.2...v4.19.3) (2018-12-04)
 
 
