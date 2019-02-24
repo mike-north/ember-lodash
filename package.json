@@ -67,7 +67,7 @@
     "eslint-plugin-ember": "6.2.0",
     "eslint-plugin-node": "8.0.1",
     "loader.js": "4.7.0",
-    "semantic-release": "15.12.4",
+    "semantic-release": "15.12.5",
     "qunit-dom": "0.8.4"
   },
   "ember-addon": {
