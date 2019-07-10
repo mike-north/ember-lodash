@@ -1,3 +1,11 @@
+## [4.19.5](https://github.com/mike-north/ember-lodash/compare/v4.19.4...v4.19.5) (2019-07-10)
+
+
+### Bug Fixes
+
+* **deps:** lodash-es [security] ([c469f4d](https://github.com/mike-north/ember-lodash/commit/c469f4d))
+* **deps:** lodash-es [security] ([#240](https://github.com/mike-north/ember-lodash/issues/240)) ([213fdb4](https://github.com/mike-north/ember-lodash/commit/213fdb4))
+
 ## [4.19.4](https://github.com/mike-north/ember-lodash/compare/v4.19.3...v4.19.4) (2018-12-05)
 
 
