@@ -4336,10 +4336,10 @@ ember-maybe-import-regenerator@0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-4.5.0.tgz#ebb62430bf5c6fb3307f1e7a612b9ab83390e8ae"
-  integrity sha512-T4VtcsbTJsVRPH8kIg1L/qPCkHX0WchsHzxSRJW+3Tw4ZPtYvgB99wJ8A81fBZUO0eF7UNHL/j583U5LgDGsHw==
+ember-qunit@4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-4.5.1.tgz#dc4b0a794fbeb6702a02f28bf19091de0f90fd5a"
+  integrity sha512-fOxXQLFdellP0yiMd9f3n7pIGggiDo8kBuswdGvsCrqTKq5aB1Cb49eeoNyBDQYGlhcxY0pOGUe+xElppChDBA==
   dependencies:
     "@ember/test-helpers" "^1.6.0"
     broccoli-funnel "^2.0.2"
@@ -4349,10 +4349,10 @@ ember-qunit@4.5.0:
     ember-cli-test-loader "^2.2.0"
     qunit "^2.9.2"
 
-ember-resolver@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-5.2.0.tgz#6a9fd7e9483be694adce77abaf9585529d060bbb"
-  integrity sha512-vL7YnifeHA2g6OM3KF7PSCIcUBvPISfcxByqGmWgjynbZpd3KmBUpHVxAlqXUYqhO4viRcM0sohAgZ41bCv7QQ==
+ember-resolver@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-5.2.1.tgz#538d7a29351316d9550864ff06fcbe55bdd92774"
+  integrity sha512-Ciz5qsrtILr7AGXO9mTSFs3/XKXpMYJqISNCfvIY0C8PlMgq+9RYbmUoBpAlvBUc/mUi3ORZKJ4csd9qchvxZw==
   dependencies:
     "@glimmer/resolver" "^0.4.1"
     babel-plugin-debug-macros "^0.1.10"
